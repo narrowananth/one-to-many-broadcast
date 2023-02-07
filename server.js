@@ -1,5 +1,5 @@
 const express = require("express")
-let app = express()
+const app = express()
 const http = require("http")
 
 app.use(express.static(__dirname + "/public"))
