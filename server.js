@@ -1,12 +1,15 @@
 const express = require("express")
 const app = express()
 const http = require("http")
+
 app.use(express.static(__dirname + "/public"))
 
 let broadcaster
+
 const port = 4000
 
 const server = http.createServer(app)
+
 const io = require("socket.io")(server)
 
 io.sockets.on("error", e => console.log(e))
