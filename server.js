@@ -8,8 +8,6 @@ let broadcaster
 
 const port = 4000
 
-const asdf = "s"
-
 const server = http.createServer(app)
 
 const io = require("socket.io")(server)
